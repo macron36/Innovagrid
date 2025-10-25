@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - WeatherFlow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <span>🌤️</span>
+            <h2>WeatherFlow</h2>
+        </div>
+        <div class="nav-links">
+            <span id="userWelcome">Welcome, User!</span>
+            <button class="logout-btn" id="logoutBtn">Logout</button>
+        </div>
+    </nav>
+
+    <div class="dashboard">
+        <div class="search-section">
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search city (e.g., London, Tokyo)" class="search-input">
+                <button class="search-btn" id="searchBtn">🔍 Search</button>
+            </div>
+            <div class="search-suggestions" id="suggestions"></div>
+        </div>
+
+        <div class="weather-card current-weather" id="weatherCard" style="display: none;">
+            <div class="weather-header">
+                <h3 id="cityName">City, Country</h3>
+                <span class="date" id="currentDate">Today</span>
+            </div>
+            <div class="weather-main">
+                <div class="temperature">
+                    <span class="temp" id="temperature">0°</span>
+                    <span class="condition" id="weatherCondition">Loading...</span>
+                </div>
+                <div class="weather-icon" id="weatherIcon">🌤️</div>
+            </div>
+            <div class="weather-details">
+                <div class="detail-item">
+                    <span class="label">Feels Like</span>
+                    <span class="value" id="feelsLike">0°</span>
+                </div>
+                <div class="detail-item">
+                    <span class="label">Humidity</span>
+                    <span class="value" id="humidity">0%</span>
+                </div>
+                <div class="detail-item">
+                    <span class="label">Wind Speed</span>
+                    <span class="value" id="windSpeed">0 m/s</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="history-section">
+            <h3>Recent Searches</h3>
+            <div class="history-list" id="historyList">
+                <div class="history-item">
+                    <span>No search history yet</span>
+                    <span>Search for a city to see history</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

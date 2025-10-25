@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App - InnovaGrid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Web Development Quiz 🚀</h1>
+        
+        <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+        </div>
+        
+        <div class="question-container" id="question-container">
+            <h2 class="question" id="question">Question will appear here</h2>
+            <div class="options-grid" id="options-grid">
+                <!-- Options will appear here -->
+            </div>
+        </div>
+        
+        <button class="next-btn" id="next-btn">Start Quiz</button>
+        
+        <div class="results-container" id="results-container" style="display: none;">
+            <h2>Quiz Completed! 🎉</h2>
+            <div class="score-circle">
+                <span class="score" id="final-score">0/10</span>
+            </div>
+            <p id="result-message">Great job!</p>
+            <button class="restart-btn" id="restart-btn">Restart Quiz</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
