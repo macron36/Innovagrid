@@ -11,6 +11,11 @@
 2. Start answering questions!
 3. Features: 10+ questions, score tracking, responsive design
 
+<img width="1366" height="619" alt="WDQ" src="https://github.com/user-attachments/assets/37fde90b-6785-4248-af26-ea67e9d2c7c5" />
+<img width="1356" height="618" alt="WDQ 2" src="https://github.com/user-attachments/assets/455f81e2-0336-4050-8e28-de5309207924" />
+
+
+
 ### Task 3 - Weather App
 1. Open `Task-3-Weather-App/frontend/index.html` in your web browser
 2. Click "Login" or "Sign Up" (demo only)
